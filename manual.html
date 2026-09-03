@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>User Manual — Developer Portfolio</title>
+  <meta name="description" content="Complete user manual for Developer Portfolio on iPhone and iPad." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-nav">
+    <div class="wrap inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M9.5 10.5h3l.7-1.7h1l-1 1.7H16v1h-2.2l-.7 1.6H15V14h-2.3L11.6 16h-1l.8-2H8.5v-1h2.5l.7-1.6H9.5v-1z"/></svg>
+        </span>
+        Developer Portfolio
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="manual.html" aria-current="page">User Manual</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a class="nav-cta" href="support.html#contact">Get Help</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <header class="page-hero">
+      <div class="eyebrow">Documentation · v1.0</div>
+      <h1>User Manual</h1>
+      <p class="lead">Learn how to track applications, run sprints, capture Focus time, sync with iCloud, and keep durable backups.</p>
+    </header>
+
+    <div class="manual-layout">
+      <nav class="manual-nav panel" aria-label="Manual sections" style="padding:1.25rem">
+        <strong style="display:block;margin-bottom:0.75rem">Contents</strong>
+        <div class="toc">
+          <a href="#overview">1. Overview</a>
+          <a href="#start">2. Getting started</a>
+          <a href="#apps">3. Applications</a>
+          <a href="#sprints">4. Sprints</a>
+          <a href="#workbench">5. Workbench</a>
+          <a href="#focus">6. Focus mode</a>
+          <a href="#analytics">7. Analytics</a>
+          <a href="#sync">8. Sync &amp; iCloud</a>
+          <a href="#backup">9. Backup &amp; Vault</a>
+          <a href="#settings">10. Settings</a>
+          <a href="#tips">11. Tips &amp; troubleshooting</a>
+        </div>
+      </nav>
+
+      <article class="panel">
+        <h2 id="overview">1. Overview</h2>
+        <p><strong>Developer Portfolio</strong> is a personal shipping cockpit for Apple-platform developers. It helps you:</p>
+        <ul>
+          <li>Maintain a portfolio of apps across lifecycle stages (Ideation → Published → Maintenance).</li>
+          <li>Plan sprints and typed activities (Fix, Enhancement, Idea, Refactor, Research).</li>
+          <li>Execute work in the Sprint Workbench and time deep work in Focus mode.</li>
+          <li>Review time spent in Analytics.</li>
+          <li>Optionally sync via iCloud, export backups, and vault project folders.</li>
+        </ul>
+        <p>The main interface uses four tabs: <strong>Applications</strong>, <strong>Settings</strong>, <strong>Workbench</strong>, and <strong>Analytics</strong>. On larger iPads, navigation may use a split view; on iPhone, a stack-based layout.</p>
+
+        <h2 id="start">2. Getting started</h2>
+        <ol>
+          <li>Launch the app. A short splash screen shows <em>Developer Portfolio — Build. Track. Ship.</em></li>
+          <li>Open the <strong>Applications</strong> tab.</li>
+          <li>Create your first application (name, summary, status, platforms, category).</li>
+          <li>Add a sprint, then add activities inside that sprint.</li>
+          <li>Open the sprint in <strong>Workbench</strong> to reorder work, run Focus sessions, and mark items done.</li>
+          <li>Visit <strong>Settings</strong> to choose theme, storage mode, and backup preferences.</li>
+        </ol>
+        <div class="callout">Empty state tip: if you have no apps yet, create one to start planning ideation, creation, testing, and publishing.</div>
+
+        <h2 id="apps">3. Applications</h2>
+        <p>Applications are the top-level records in your portfolio.</p>
+        <h3>Create or edit an application</h3>
+        <ul>
+          <li><strong>Name</strong> — product name as you want it listed.</li>
+          <li><strong>Summary</strong> — short description of what you’re building.</li>
+          <li><strong>Lifecycle status</strong> — defaults include Ideation, Design, Development, Testing, Ready for Review, Published, Maintenance (customizable in Settings).</li>
+          <li><strong>Platforms</strong> — e.g. iOS, iPadOS, watchOS, macOS, tvOS, visionOS.</li>
+          <li><strong>Category</strong> — e.g. Productivity, Utilities, Business.</li>
+          <li><strong>Version &amp; build</strong> — current marketing version and build number.</li>
+          <li><strong>Icon</strong> — optional image via the system photo picker.</li>
+          <li><strong>Project folder</strong> — link a folder on disk (Files / local storage) so you can open it later or copy it into the Project Vault.</li>
+        </ul>
+        <h3>Delete an application</h3>
+        <p>Deleting an application removes its sprints, activities, and associated Focus history from the portfolio. Export a backup first if you might need the data later.</p>
+
+        <h2 id="sprints">4. Sprints</h2>
+        <p>Each application can contain multiple sprints.</p>
+        <ul>
+          <li>Create a sprint with name, version, build, status (Planned, Active, Paused, Complete by default), and start date.</li>
+          <li>Add <strong>activities</strong> (work items) with a type/category, title, and notes.</li>
+          <li>Mark activities done as you finish them; incomplete items stay visible in the Workbench.</li>
+          <li>Use <strong>Hide Completed Sprints</strong> in Settings → Display if you want a cleaner list.</li>
+        </ul>
+        <p>Open a sprint in the Workbench to focus on execution for that slice of work.</p>
+
+        <h2 id="workbench">5. Sprint Workbench</h2>
+        <p>The Workbench is where day-to-day shipping happens.</p>
+        <ol>
+          <li>Select an application and sprint.</li>
+          <li>Review the activity list. Optionally hide completed items.</li>
+          <li>Reorder activities to match priority.</li>
+          <li>Edit notes, change categories, or delete items you no longer need.</li>
+          <li>Use vault actions (when configured) to snapshot the linked project folder.</li>
+        </ol>
+        <p>On compact devices you’ll navigate via stacks; on regular-width iPads, split navigation keeps context visible.</p>
+
+        <h2 id="focus">6. Focus mode</h2>
+        <p>Focus mode turns a single activity into a timed work session.</p>
+        <ul>
+          <li><strong>Enter Focus:</strong> double-tap an activity in the Workbench.</li>
+          <li><strong>Timer:</strong> play to start counting; pause when you step away.</li>
+          <li><strong>Notes:</strong> capture decisions or blockers while you work.</li>
+          <li><strong>Done:</strong> mark the activity complete when finished.</li>
+        </ul>
+        <p>Recorded sessions contribute to Analytics totals for that app, sprint, and task.</p>
+
+        <h2 id="analytics">7. Analytics</h2>
+        <p>The Analytics tab aggregates Focus time so you can answer: <em>Where did the hours go?</em></p>
+        <ul>
+          <li>Totals by <strong>application</strong></li>
+          <li>Totals by <strong>sprint</strong></li>
+          <li>Totals by <strong>task / activity</strong></li>
+        </ul>
+        <p>Analytics reflect data stored in your portfolio (device and/or iCloud). They are not sent to a Developer analytics service.</p>
+
+        <h2 id="sync">8. Sync &amp; iCloud</h2>
+        <p>Settings → <strong>Sync</strong> controls where portfolio data lives.</p>
+        <table class="meta-table">
+          <tr><th>This Device Only</th><td>Portfolio data stays on the current iPhone or iPad.</td></tr>
+          <tr><th>All My Devices (iCloud)</th><td>Apps and settings sync across devices using the same Apple ID when iCloud Drive is available.</td></tr>
+        </table>
+        <h3>Useful sync actions</h3>
+        <ul>
+          <li><strong>Force Sync Now</strong> — push/pull promptly when online.</li>
+          <li><strong>Reload All Data from iCloud</strong> — replace local portfolio with the cloud copy (destructive to local-only changes).</li>
+          <li><strong>Show Sync Diagnostics</strong> — technical status useful for troubleshooting.</li>
+          <li><strong>Sync Health</strong> — quick indicator when iCloud mode is on.</li>
+        </ul>
+        <div class="callout warn">
+          <strong>Conflicts:</strong> If cloud and device data differ at first sync, you’ll choose which set to keep. Replacing iCloud with device data requires typing <strong>SYNC</strong> to confirm. This can overwrite cloud data—back up first.
+        </div>
+        <p>If the iCloud container cannot open, confirm you’re signed into iCloud with iCloud Drive enabled.</p>
+
+        <h2 id="backup">9. Backup, Restore &amp; Project Vault</h2>
+        <h3>Manual backup</h3>
+        <p>Settings → Backup &amp; Restore → <strong>Back Up to File</strong> exports a JSON backup (schema version 1) including applications and settings.</p>
+        <h3>Restore</h3>
+        <p><strong>Restore from Backup</strong> replaces your current portfolio data on this device and, when in iCloud sync mode, affects the synced dataset. The app shows confirmation warnings—read them before proceeding.</p>
+        <h3>Automated backup reminders</h3>
+        <ul>
+          <li>Enable reminders and choose an interval (days, weeks, or months).</li>
+          <li>Pick a destination folder.</li>
+          <li>Use <strong>Run Backup Now</strong> when prompted or from settings.</li>
+          <li>Overdue checks run at app launch based on time since the last successful backup.</li>
+        </ul>
+        <h3>Project Vault</h3>
+        <ul>
+          <li>Choose a <strong>Vault destination</strong> and subfolder name (default <strong>Project Vaults</strong>).</li>
+          <li>Link a project folder on an application.</li>
+          <li>Copy the folder into the vault; copies use sequenced names so earlier snapshots are preserved.</li>
+        </ul>
+
+        <h2 id="settings">10. Settings reference</h2>
+        <table class="meta-table">
+          <tr><th>Sync</th><td>Storage mode, force sync, reload from iCloud, diagnostics.</td></tr>
+          <tr><th>Backup &amp; Restore</th><td>Vault destination, automated backups, export/import.</td></tr>
+          <tr><th>Display</th><td>Theme (Light / Dark / System), Hide Completed Sprints.</td></tr>
+          <tr><th>Pick lists</th><td>Lifecycle statuses, sprint item categories (+ SF Symbol icons), sprint statuses, platforms, application categories. Expand a list, add values, and use Reorder.</td></tr>
+        </table>
+
+        <h2 id="tips">11. Tips &amp; troubleshooting</h2>
+        <ul>
+          <li><strong>Ship rhythm:</strong> Keep one Active sprint per app you’re actively building; park the rest as Planned or Paused.</li>
+          <li><strong>Review readiness:</strong> Move lifecycle status to Ready for Review when TestFlight builds are stabilizing.</li>
+          <li><strong>Before risky sync:</strong> Back Up to File, then proceed.</li>
+          <li><strong>Icon tips:</strong> Use a simple 1024-style mark; it scales better in lists.</li>
+          <li><strong>Lost work after restore:</strong> Restores replace data by design. Keep dated backup files.</li>
+          <li><strong>Still stuck?</strong> Visit <a href="support.html">Support</a> with Sync Diagnostics text and your iOS version.</li>
+        </ul>
+
+        <div class="callout" style="margin-top:2rem">
+          Need the App Store submission checklist and field-by-field copy? See the PDF pack in the <code>AppStoreSubmission</code> folder of the project repository.
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap inner">
+      <div>© <span id="y"></span> Developer Portfolio</div>
+      <nav aria-label="Footer">
+        <a href="manual.html">Manual</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

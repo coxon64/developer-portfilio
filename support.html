@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support — Developer Portfolio</title>
+  <meta name="description" content="Help, FAQ, and contact for Developer Portfolio." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-nav">
+    <div class="wrap inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M9.5 10.5h3l.7-1.7h1l-1 1.7H16v1h-2.2l-.7 1.6H15V14h-2.3L11.6 16h-1l.8-2H8.5v-1h2.5l.7-1.6H9.5v-1z"/></svg>
+        </span>
+        Developer Portfolio
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="manual.html">User Manual</a>
+        <a href="support.html" aria-current="page">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a class="nav-cta" href="#contact">Get Help</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <header class="page-hero">
+      <div class="eyebrow">Help Center</div>
+      <h1>Support</h1>
+      <p class="lead">Quick answers for sync, backups, Focus mode, and shipping workflows—plus how to reach us if something breaks.</p>
+    </header>
+
+    <div class="support-grid" style="margin-bottom:1.5rem">
+      <article class="support-card">
+        <h3>User Manual</h3>
+        <p>Step-by-step coverage of Applications, Workbench, Focus, Analytics, Sync, Vault, and Settings.</p>
+        <a class="btn btn-primary" href="manual.html">Open Manual</a>
+      </article>
+      <article class="support-card">
+        <h3>Privacy &amp; Terms</h3>
+        <p>How your data stays on device / in your iCloud, and the license terms for using the App.</p>
+        <a class="btn btn-ghost" href="privacy.html">Privacy Policy</a>
+      </article>
+      <article class="support-card" id="contact">
+        <h3>Contact</h3>
+        <p>Include your device model, iOS version, and a short description of the issue. Screenshots help.</p>
+        <p class="placeholder-note">Replace this address before publishing:</p>
+        <a class="btn btn-primary" href="mailto:YOUR_SUPPORT_EMAIL@example.com?subject=Developer%20Portfolio%20Support">Email Support</a>
+      </article>
+    </div>
+
+    <article class="panel">
+      <h2>Frequently asked questions</h2>
+
+      <h3>Where is my data stored?</h3>
+      <p>By default, on this device only. In Settings → Sync you can switch to <strong>All My Devices (iCloud)</strong> so portfolio data syncs across iPhone and iPad signed into the same Apple ID with iCloud Drive available.</p>
+
+      <h3>iCloud sync isn’t updating</h3>
+      <ul>
+        <li>Confirm you’re signed into iCloud and that <strong>iCloud Drive</strong> is on.</li>
+        <li>Open Settings → Sync and check Sync Health; try <strong>Force Sync Now</strong>.</li>
+        <li>Use <strong>Show Sync Diagnostics</strong> and include that text if you email support.</li>
+        <li>Wait for network connectivity; large conflicts may require choosing cloud vs device data (and typing <strong>SYNC</strong> for destructive replaces).</li>
+      </ul>
+
+      <h3>How do I back up?</h3>
+      <p>Settings → Backup &amp; Restore → <strong>Back Up to File</strong>. Optionally enable automated backup reminders and choose a destination folder. Restoring replaces all current portfolio data—confirm carefully.</p>
+
+      <h3>What is Project Vault?</h3>
+      <p>Set a vault destination and folder name (default <strong>Project Vaults</strong>). From an application with a linked project folder, you can copy that folder into the vault with sequenced names for archival snapshots.</p>
+
+      <h3>How does Focus mode work?</h3>
+      <p>In the Sprint Workbench, double-tap an activity. Use play/pause to time work, add notes, and mark the item done. Time feeds Analytics totals.</p>
+
+      <h3>Can I customize statuses and categories?</h3>
+      <p>Yes. Settings → Pick lists lets you edit lifecycle statuses, sprint statuses, item categories (with SF Symbol names), platforms, and application categories. Use Reorder to change order.</p>
+
+      <h3>Does the app collect analytics about me?</h3>
+      <p>In-app Analytics are <em>your</em> work-time totals stored with your portfolio. The App does not use third-party tracking or advertising SDKs. See the <a href="privacy.html">Privacy Policy</a>.</p>
+
+      <h3>Minimum requirements</h3>
+      <p>iPhone and iPad running a compatible iOS / iPadOS version as listed on the App Store product page (built for modern iOS).</p>
+
+      <h2>App information</h2>
+      <table class="meta-table">
+        <tr><th>Name</th><td>Developer Portfolio</td></tr>
+        <tr><th>Tagline</th><td>Build. Track. Ship.</td></tr>
+        <tr><th>Platforms</th><td>iPhone, iPad</td></tr>
+        <tr><th>Category</th><td>Developer Tools / Productivity</td></tr>
+        <tr><th>Sync</th><td>Optional iCloud Drive</td></tr>
+      </table>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap inner">
+      <div>© <span id="y"></span> Developer Portfolio</div>
+      <nav aria-label="Footer">
+        <a href="manual.html">Manual</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
